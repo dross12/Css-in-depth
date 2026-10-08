@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 16px 'Lato', sans-serif;
+    color: #333333;
+}
+
+/* HEADER */
+header {
+    min-height: 650px;
+    padding: 30px 60px;
+    background: #333333;
+    color: #ffffff;
+}
+
+/* NAVIGATION */
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-brand {
+    width: 130px;
+    height: auto;
+}
+
+.nav-primary {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.nav-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.nav-item a:hover {
+    color: #52c7f0;
+}
+
+/* CONTACT BUTTON */
+.nav-primary .cta-btn a {
+    display: inline-block;
+
+    padding: 10px 22px;
+
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+
+    color: #ffffff;
+}
+
+.nav-primary .cta-btn a:hover {
+    background: #ffffff;
+    color: #333333;
+}
+
+/* MAIN HEADING */
+.header-title {
+    margin: 110px 0 0;
+
+    text-align: center;
+
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* SUBTITLE */
+.header-subtitle {
+    margin: 15px 0 25px;
+
+    text-align: center;
+
+    color: #52c7f0;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* GET VENTIVE BUTTON */
+#button-container {
+    text-align: center;
+}
+
+.header-btn {
+    display: inline-block;
+
+    padding: 12px 28px;
+
+    border-radius: 25px;
+
+    background: #52c7f0;
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.header-btn:hover {
+    background: #ffffff;
+    color: #333333;
+}
+
+/* SERVICES */
+.header-services {
+    width: 900px;
+    margin: 80px auto 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+/* EACH SERVICE */
+.service {
+    width: 30%;
+    text-align: center;
+}
+
+.service article {
+    padding: 10px;
+}
+
+/* SERVICE TITLE */
+.service-title {
+    margin: 0 0 20px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/* SERVICE DESCRIPTION */
+.service-intro {
+    margin: 0;
+
+    color: #aaaaaa;
+
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* READ MORE */
+.service-link {
+    display: block;
+
+    margin-top: 15px;
+
+    color: #52c7f0;
+
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.service-link:hover {
+    color: #ffffff;
+}

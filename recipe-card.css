@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333333;
+    font: 16px "Lato", sans-serif;
+    color: #ffffff;
+}
+
+/* Main recipe card */
+main {
+    width: 1000px;
+    height: 520px;
+    margin: 50px auto;
+    padding: 30px 35px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+
+    background-image: url("C:\\Users\\Dasha\\OneDrive\\Photoshop folder - Copy\\Photoshop folder\\CSS-In-Depth-Lab-Resources\\CSS-In-Depth-Lab-Resources\\P01_RecipeCard\\images\\food-image-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Dark overlay over the image */
+main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 0;
+}
+
+/* Keep all content above overlay */
+main > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Recipe title */
+h1 {
+    width: 350px;
+    margin: 0 0 10px 250px;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/* Recipe information */
+.recipies-info {
+    position: absolute;
+    top: 28px;
+    left: 75px;
+    display: flex;
+    gap: 25px;
+}
+
+/* Time, serves and level */
+.recipies-info p {
+    margin: 0;
+    font-size: 8px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/* Green information values */
+.recipies-info span {
+    color: #b5c640;
+    font-weight: 900;
+}
+
+/* Ingredients button */
+.btn-primary {
+    position: absolute;
+    top: 55px;
+    left: 160px;
+
+    padding: 6px 18px;
+
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+
+    background: transparent;
+    color: #ffffff;
+
+    font: 300 8px "Lato", sans-serif;
+    cursor: pointer;
+}
+
+/* Button hover */
+.btn-primary:hover {
+    background: #b5c640;
+    border-color: #b5c640;
+}
+
+/* Preparation steps */
+.prep-steps {
+    position: absolute;
+    top: 75px;
+    left: 250px;
+
+    width: 340px;
+
+    margin: 0;
+    padding-left: 0;
+
+    list-style: none;
+}
+
+/* Individual steps */
+.step {
+    margin-bottom: 15px;
+
+    font-size: 7px;
+    line-height: 1.4;
+    font-weight: 400;
+
+    color: #ffffff;
+}
